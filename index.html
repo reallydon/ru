@@ -1,0 +1,539 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>VimeMC - Покупка доната на сервере Майнкрафт</title>
+      <link rel="shortcut icon" href="templates\styles\images\favicon.ico" type="image/x-icon">
+      <link href="templates\styles\css\bootstrap.min.css" rel="stylesheet">
+      <link href="templates\styles\css\site.min.css" rel="stylesheet">
+      <link href="templates\styles\css\style.css" rel="stylesheet">
+   </head>
+   <body>
+      <div id="before-load">
+         <i></i>
+      </div>
+      <nav class="navbar navbar-toggleable-md navbar-light bg-primary">
+         <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.htm"><i class="fa fa-cube"></i> VimeMC</a>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+               <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                     <a class="nav-link" href="index.htm">Главная</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="https://vk.com/vimemc" target="_blank">Группа <i class="fa fa-vk"></i></a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="hd\index.htm" font="" style="color: orange;"><strong>Установить HD скин</strong></a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="plash\index.htm" font="" style="color: orange;"><strong>Установить HD плащ</strong></a>
+                  </li>
+               </ul>
+               <span class="navbar-text">
+               <span class="badge badge-danger">Онлайн: <b id="online"></b></span> <span class="badge badge-primary" onclick="ipsend()" id="online" onselect="ipsend()">IP: mc.vimemc.ru</span>
+               </span>
+            </div>
+         </div>
+      </nav>
+      <br>
+      <div class="container">
+         <!-- <div class="alert alert-dismissible alert-success">
+            <h4>Скидки 90% на все</h4>
+            <p>Только сегодня, Вы можете купить донат с большой скидкой 90% на весь донат и другие услуги.</p>
+            </div> -->
+         <!-- <div class="jumbotron">
+            <h1 class="display-5">Скидки до 90%</h1>
+            <p>Успейте и купите сегодня донат по скидке 90%. Он останется у вас навсегда и сохранится даже после вайпов.</p>
+            </div> -->
+         <!--
+            <div class="card">
+              <div class="card-body">
+                <center>
+                  <h4>КУПИТЕ ДОНАТ СО СКИДКОЙ 90% СЕГОДНЯ</h4><br>
+                  <b>До окончания акции:</b><br><br>
+                  <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-1"><h5 class="one"></h5> Дней</div>
+                    <div class="col-md-1"><h5 class="second"></h5> Часов</div>
+                    <div class="col-md-1"><h5 class="third"></h5> Минут</div>
+                    <div class="col-md-1"><h5 class="four"></h5> Секунд</div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-1"></div>
+                </center>
+              </div>
+            </div>
+            <br> -->
+         <center>
+            <img src="templates\styles\images\banner-min.png" class="img-fluid" style="border: 1px solid rgba(0, 0, 0, .125); border-radius: .25rem">
+         </center>
+         <br>
+         <div class="card">
+            <div class="card-body">
+               <div class="row">
+                  <div class="col-md-6">
+                     <ul class="nav nav-tabs nav-fill" style="margin-bottom: 15px">
+                                                <li class="nav-item">
+                           <a class="nav-link active" data-toggle="tab" href="#1">Выживание + МГ</a>
+                        </li>
+                                                <li class="nav-item">
+                           <a class="nav-link " data-toggle="tab" href="#2">Гриферский</a>
+                        </li>
+                        
+                     </ul>
+                     <div class="tab-content">
+                        <div id="results"></div>
+                        <div class="alert-type"></div>
+                                                <div class="tab-pane fade in active show" id="1">
+                           <div class="alert alert-info text-center">
+                              Вы выбрали сервер: <b>Выживание + МГ</b>
+                           </div>
+                           <form onsubmit="return false;" class="phpmc_buy" id="phpmc_form">
+                              <input type="hidden" id="server" name="server" class="server" value="Выживание + МГ">
+                              <fieldset>
+                                 <div class="form-group">
+                                    <label>Никнейм игрока</label>
+                                    <input type="text" class="form-control username" id="username" name="username" placeholder="Введите ваш ник">
+                                 </div>
+                                 <div class="form-group">
+                                    <label>Выберите донат на Выживание + МГ</label>
+                                    <select class="form-control group" id="group" name="group">
+                                       <option disabled="" selected="">Выберите донат</option>
+                                                                              <optgroup label="Привилегии">
+                                                                                    <option value="1" data-prefix="0">Вип - 5 рублей.</option>
+                                                                                    <option value="2" data-prefix="0">Премиум - 9 рублей.</option>
+                                                                                    <option value="3" data-prefix="0">Креатив - 15 рублей.</option>
+                                                                                    <option value="4" data-prefix="0">Админ - 25 рублей.</option>
+                                                                                    <option value="5" data-prefix="0">YouTube - 39 рублей.</option>
+                                                                                    <option value="6" data-prefix="0">Император - 59 рублей.</option>
+                                                                                    <option value="7" data-prefix="0">Главный админ - 69 рублей.</option>
+                                                                                    <option value="8" data-prefix="0">Создатель - 99 рублей.</option>
+                                                                                    <option value="9" data-prefix="0">Делюкс - 149 рублей.</option>
+                                                                                    <option value="10" data-prefix="0">Support - 279 рублей.</option>
+                                                                                    <option value="11" data-prefix="0">Основатель - 329 рублей.</option>
+                                                                                    <option value="12" data-prefix="0">ВЫКУПИТЬ СЕРВЕР  - 479 рублей.</option>
+                                                                                    <option value="13" data-prefix="0">ХЕЛПЕР  - 999 рублей.</option>
+                                                                                    <option value="14" data-prefix="0">STAFF (ЗВЕЗДА) - 5699 рублей.</option>
+                                                                                    <option value="23" data-prefix="0">ПРОЕКТ (бот телеграмм + звезда НА ВСЕ РЕЖИМЫ) - 13890 рублей.</option>
+                                                                                    <option value="24" data-prefix="0">ВЛАДЕЛЕЦ (ПОЛНЫЙ БОТ БЕЗ ОГРАНИЧЕНИЙ) - 27890 рублей.</option>
+                                          
+                                       </optgroup>
+                                                                              <optgroup label="Донат-коробки">
+                                                                                    <option value="15" data-prefix="0">Донат кейс X5 - 25 рублей.</option>
+                                                                                    <option value="16" data-prefix="0">Донат кейс X10 - 42 рублей.</option>
+                                                                                    <option value="17" data-prefix="0">Донат кейс X20 - 89 рублей.</option>
+                                                                                    <option value="18" data-prefix="0">Донат кейс X30 - 139 рублей.</option>
+                                          
+                                       </optgroup>
+                                                                              <optgroup label="ВаймКоины">
+                                                                                    <option value="19" data-prefix="0">ВаймКоины x100 - 39 рублей.</option>
+                                                                                    <option value="20" data-prefix="0">ВаймКоины x500 - 99 рублей.</option>
+                                                                                    <option value="21" data-prefix="0">ВаймКоины x1000 - 149 рублей.</option>
+                                          
+                                       </optgroup>
+                                                                              <optgroup label="Прочее">
+                                                                                    <option value="22" data-prefix="0">Разбан - 79 рублей.</option>
+                                                                                    <option value="25" data-prefix="0">Разбан донатерского аккаунта - 129 рублей.</option>
+                                                                                    <option value="26" data-prefix="0">Разбан по айпи - 149 рублей.</option>
+                                                                                    <option value="27" data-prefix="0">Размут - 39 рублей.</option>
+                                          
+                                       </optgroup>
+                                       
+                                    </select>
+                                 </div>
+                                 <center>
+                                    <button type="sumit" id="submit" name="submit" class="btn btn-primary submit" disabled="">Укажите ник и выберите группу</button>
+                                 </center>
+                                 <div class="info" id="info"></div>
+                              </fieldset>
+                           </form>
+                        </div>
+                                                <div class="tab-pane fade in " id="2">
+                           <div class="alert alert-info text-center">
+                              Вы выбрали сервер: <b>Гриферский</b>
+                           </div>
+                           <form onsubmit="return false;" class="phpmc_buy" id="phpmc_form">
+                              <input type="hidden" id="server" name="server" class="server" value="Гриферский">
+                              <fieldset>
+                                 <div class="form-group">
+                                    <label>Никнейм игрока</label>
+                                    <input type="text" class="form-control username" id="username" name="username" placeholder="Введите ваш ник">
+                                 </div>
+                                 <div class="form-group">
+                                    <label>Выберите донат на Гриферский</label>
+                                    <select class="form-control group" id="group" name="group">
+                                       <option disabled="" selected="">Выберите донат</option>
+                                                                              <optgroup label="Привилегии">
+                                                                                    <option value="28" data-prefix="0">HERO - 27 рублей.</option>
+                                                                                    <option value="29" data-prefix="0">TITAN - 55 рублей.</option>
+                                                                                    <option value="30" data-prefix="0">AVENGER - 99 рублей.</option>
+                                                                                    <option value="31" data-prefix="0">OVERLORD - 179 рублей.</option>
+                                                                                    <option value="32" data-prefix="0">MAGISTER - 329 рублей.</option>
+                                                                                    <option value="33" data-prefix="0">IMPERATOR - 479 рублей.</option>
+                                                                                    <option value="34" data-prefix="0">DRAGON - 749 рублей.</option>
+                                                                                    <option value="35" data-prefix="0">D.HELPER - 1799 рублей.</option>
+                                          
+                                       </optgroup>
+                                                                              <optgroup label="Кейсы">
+                                                                                    <option value="36" data-prefix="0">5 кейсов с донатом - 42 рублей.</option>
+                                                                                    <option value="37" data-prefix="0">10 кейсов с донатом - 69 рублей.</option>
+                                                                                    <option value="38" data-prefix="0">25 кейсов с донатом - 129 рублей.</option>
+                                                                                    <option value="46" data-prefix="0">5 кейсов с валютой - 29 рублей.</option>
+                                                                                    <option value="47" data-prefix="0">10 кейсов с валютой - 48 рублей.</option>
+                                                                                    <option value="48" data-prefix="0">25 кейсов с валютой - 119 рублей.</option>
+                                                                                    <option value="49" data-prefix="0">5 кейсов с ваймкоинами - 149 рублей.</option>
+                                                                                    <option value="50" data-prefix="0">10 кейсов с ваймкоинами - 219 рублей.</option>
+                                                                                    <option value="51" data-prefix="0">25 кейсов с ваймкоинами - 479 рублей.</option>
+                                                                                    <option value="52" data-prefix="0">10 кейсов с префиксами - 99 рублей.</option>
+                                          
+                                       </optgroup>
+                                                                              <optgroup label="Гриферские ВаймКоины">
+                                                                                    <option value="39" data-prefix="0">50 ваймкоинов - 50 рублей.</option>
+                                                                                    <option value="40" data-prefix="0">100 ваймкоинов [Бонус +30] - 100 рублей.</option>
+                                                                                    <option value="41" data-prefix="0">150 ваймкоинов [Бонус +60] - 150 рублей.</option>
+                                                                                    <option value="42" data-prefix="0">200 ваймкоинов [Бонус +90] - 200 рублей.</option>
+                                                                                    <option value="43" data-prefix="0">500 ваймкоинов [Бонус +150] - 479 рублей.</option>
+                                                                                    <option value="44" data-prefix="0">1000 ваймкоинов [Бонус +1000] - 979 рублей.</option>
+                                                                                    <option value="45" data-prefix="0">3000 ваймкоинов [Бонус +3000] - 2800 рублей.</option>
+                                          
+                                       </optgroup>
+                                                                              <optgroup label="Прочее">
+                                                                                    <option value="53" data-prefix="0">Разбан - 149 рублей.</option>
+                                          
+                                       </optgroup>
+                                       
+                                    </select>
+                                 </div>
+                                 <center>
+                                    <button type="sumit" id="submit" name="submit" class="btn btn-primary submit" disabled="">Укажите ник и выберите группу</button>
+                                 </center>
+                                 <div class="info" id="info"></div>
+                              </fieldset>
+                           </form>
+                        </div>
+                        
+                     </div>
+                  </div>
+                  <div class="col-md-6">
+                     <center>
+                        <div class="alert alert-gold">
+                           <!-- <h2>#СИДИМДОМА!<br><small>До конца <b>МЕСЯЦА</b> нереальные скидки НА ДОНАТ!</small></h2> -->
+						   <h3 class="text-center"><b>Не работает оплата через киви? Ознакомьтесь со статьей: <a href="https://vk.com/@vimemc-qiwi" target="_blank">vk.com/@vimemc-qiwi</a></b></h3>
+                        </div>
+						<p class="text-center"><b>Дополнительные мини-скидки 15% завершатся:</b></p>
+                        <div class="row">
+                           <!-- <div class="col-md-3">
+                              <div class="card">
+                                <div class="card-block">
+                                  <h5 class="one text-danger"></h5> Дней
+                                </div>
+                              </div>
+                              </div> -->
+                           <div class="col-md-4">
+                              <div class="card">
+                                 <div class="card-block">
+                                    <h5 class="second text-danger"></h5>
+                                    Часов
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-4">
+                              <div class="card">
+                                 <div class="card-block">
+                                    <h5 class="third text-danger"></h5>
+                                    Минут
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-4">
+                              <div class="card">
+                                 <div class="card-block">
+                                    <h5 class="four text-danger"></h5>
+                                    Секунд
+                                 </div>
+                              </div>
+                           </div>
+                        </div><br>
+                        <div class="alert alert-danger" style="font-size: 17px;">
+                           <div class="flash animated infinite">КЕЙСОВ С УВЕЛИЧЕННЫМ ШАНСОМ ОСТАЛОСЬ: <b style="color:yellow;">70</b> ШТ.</div>
+                        </div>
+                     </center>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <br>
+         <div class="card">
+				<div class="footer footer-text">
+					<small>Copyright © 2015-2020 Связь | vk.me/vimemc</small>
+				</div>
+            </div>
+         </div>
+      
+      <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+         <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h4 class="modal-title">Уникальное предложение</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <center>
+                     <h5>КУПИТЕ ДОНАТ - ПОЛУЧИТЕ ВОЗМОЖНОСТЬ ВЫИГРАТЬ IPHONE X</h5>
+                     <br>
+                     <img src="..//templates/styles/images/banner.png" class="img-fluid">
+                  </center>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="modal fade bd-example-modal-lg" id="prefix-constructor" tabindex="-1" role="dialog" aria-hidden="true">
+         <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title">Создайте Ваш будущий префикс</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  Ваш новый префикс: <br>
+                  <small style="color: gray">[</small><b>L</b><small style="color: gray">] [</small><b class="prefix">Игрок</b><small style="color: gray">]</small> <b class="nickname"></b> <small style="color: gray">⇨</small> <small><b>Ваше сообщение в чат</b></small> <br><br>
+                  <div class="preferror"></div>
+                  <button type="button" class="btn btn-success btn-sm" onclick="setColor('green')">Зеленый</button>
+                  <button type="button" class="btn btn-primary btn-sm" onclick="setColor('blue')">Синий</button>
+                  <button type="button" class="btn btn-danger btn-sm" onclick="setColor('red')">Красный</button>
+                  <button type="button" class="btn btn-warning btn-sm" onclick="setColor('orange')">Золотой</button>
+                  <button type="button" class="btn btn-gold btn-sm" onclick="setColor('gold')">Светло-желтый</button>
+                  <button type="button" class="btn btn-turquoise btn-sm" onclick="setColor('turquoise')">Бирюзовый</button>
+                  <button type="button" class="btn btn-darkviolet btn-sm" onclick="setColor('darkviolet')">Фиолетовый</button>
+                  <button type="button" class="btn btn-deepskyblue btn-sm" onclick="setColor('deepskyblue')">Голубой</button>
+                  <button type="button" class="btn btn-magenta btn-sm" onclick="setColor('magenta')">Розовый</button>
+                  <button type="button" class="btn btn-dark btn-sm" id="underline">Подчеркнутый</button>
+                  <br><br>
+                  <form onsubmit="return false;">
+                     <fieldset>
+                        <div class="row">
+                           <div class="col-md-8">
+                              <div class="form-group">
+                                 <input type="text" class="form-control" id="prefix" placeholder="Придумайте префикс" onkeyup="changePrefix(this.value)">
+                              </div>
+                           </div>
+                           <div class="col-md-4">
+                              <button id="buy_prefix" class="btn btn-primary btn-block"></button>
+                           </div>
+                        </div>
+                     </fieldset>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="modal fade bd-example-modal-lg" id="prefix-constructor" tabindex="-1" role="dialog" aria-hidden="true">
+         <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title">Создайте Ваш будущий префикс</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  Ваш новый префикс: <br>
+                  <small style="color: gray">[</small><b>L</b><small style="color: gray">] [</small><b class="prefix">Игрок</b><small style="color: gray">]</small> <b id="nickname" class="nickname">test</b> <small style="color: gray">⇨</small> <small><b>Ваше сообщение в чат</b></small> <br><br>
+                  <div class="preferror"></div>
+                  <button type="button" class="btn btn-success btn-sm" onclick="setColor('green')">Зеленый</button>
+                  <button type="button" class="btn btn-primary btn-sm" onclick="setColor('blue')">Синий</button>
+                  <button type="button" class="btn btn-danger btn-sm" onclick="setColor('red')">Красный</button>
+                  <button type="button" class="btn btn-warning btn-sm" onclick="setColor('orange')">Золотой</button>
+                  <button type="button" class="btn btn-gold btn-sm" onclick="setColor('gold')">Светло-желтый</button>
+                  <button type="button" class="btn btn-turquoise btn-sm" onclick="setColor('turquoise')">Бирюзовый</button>
+                  <button type="button" class="btn btn-darkviolet btn-sm" onclick="setColor('darkviolet')">Фиолетовый</button>
+                  <button type="button" class="btn btn-deepskyblue btn-sm" onclick="setColor('deepskyblue')">Голубой</button>
+                  <button type="button" class="btn btn-magenta btn-sm" onclick="setColor('magenta')">Розовый</button>
+                  <button type="button" class="btn btn-dark btn-sm" id="underline">Подчеркнутый</button>
+                  <br><br>
+                  <form onsubmit="return false;">
+                     <fieldset>
+                        <div class="row">
+                           <div class="col-md-8">
+                              <div class="form-group">
+                                 <input type="text" class="form-control" id="prefix" placeholder="Придумайте префикс" onkeyup="changePrefix(this.value)">
+                              </div>
+                           </div>
+                           <div class="col-md-4">
+                              <button id="payButton" class="btn btn-primary btn-block"></button>
+                           </div>
+                        </div>
+                     </fieldset>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="templates\styles\js\slim.min.js"></script>
+      <script src="templates\styles\js\popper.min.js"></script>
+      <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+      <script src="templates\styles\js\jquery.countdown.min.js"></script>
+      <script src="templates\styles\js\bootstrap.min.js"></script>
+      <script src="templates\styles\js\fontawesome.js"></script>
+      <script type="text/javascript">
+         $(window).load(function() {
+             $('#before-load').find('i').fadeOut().end().delay(100).fadeOut('slow');
+         });
+
+         function setColor(color) {
+             var color;
+             $(".prefix").css({
+                 'color': color
+             });
+             $(".nickname").css({
+                 'color': ''
+             });
+         }
+
+         function changePrefix(value) {
+             var value;
+             if (value.length < 12) {
+                 value = value.replace(" ", "");
+                 $('.prefix').html(value);
+                 $('.preferror').html("");
+             } else {
+                 $('.prefix').html("Игрок");
+                 var status = "danger";
+                 var message = "Префикс не может быть более 12 символов";
+                 $('.preferror').html('<div class="animated shake alert alert-' + status + '">' + message + '</div>');
+             }
+         }
+		 
+
+		$('#underline').click(function() {
+		  var result = $('.prefix').css("text-decoration");
+		  result = result.substring(0,4);
+		  if(result == "none") {
+			$(".prefix").css({ 'text-decoration': 'underline' });
+			$("#underline").html("Убрать подчеркивание");
+		  } else {
+			$(".prefix").css({ 'text-decoration': '' });
+			$("#underline").html("Подчеркнутый");
+		  }
+		});
+
+         function ipsend() {
+             prompt("Скопируйте данный айпи и вставьте в Ваш клиент", "mc.vimemc.ru");
+         }
+
+         function sendalert(status, message) {
+             $('.alert-type').html('<div class="animated jackInTheBox alert alert-' + status + '">' + message + '</div>');
+         }
+
+         $('page').ready(function() {
+var date = new Date();
+var day = date.getDate() + 1;
+if(day >= 32) { day = day - 1 }
+$(".row").countdown("2030/12/" + day, function(event) {
+$('.second').text(event.strftime('%H'));
+$('.third').text(event.strftime('%M'));
+$('.four').text(event.strftime('%S'));
+});
+         });
+
+         $.post('/engine/ajax.php?type=donaters', function(data) {
+             $('#donaters').html(data);
+         });
+
+         $.post('/engine/ajax.php?type=online', function(data) {
+             $('#online').html(data);
+         });
+
+         $(document).ready(function() {
+             $('.phpmc_buy').on('keydown change', function() {
+                 var form = $(this);
+                 var formDATA = form.serialize();
+                 var prefix = form.find('select option:selected').data('prefix');
+                 $.post('/engine/ajax.php?type=view', formDATA, function(data) {
+                     var data = JSON.parse(data);
+                     if (data.status == "error") {
+                         form.find('.submit').prop('disabled', true).text(data.button);
+                     } else {
+                         form.find('.submit').prop('disabled', false).text(data.button);
+                     }
+					 console.log(formDATA);
+                     if ((data.class) && (prefix == 0)) form.find('.info').html('<div style="margin-top: 15px;" class="alert alert-' + data.class + '">' + data.message + '</div>');
+                     else form.find('.info').html('');
+                 });
+             });
+             $('.phpmc_buy').submit(function(event) {
+                 var form = $(this);
+                 var formDATA = form.serialize();
+                 var select_prefix = form.find('select option:selected').data('prefix');
+                 if (select_prefix == 1) {
+					 $(".nickname").html(form.find('.username').val());
+					 $("#buy_prefix").html(form.find('.submit').text());
+                     $("#prefix-constructor").modal("show");
+                     $('#buy_prefix').click(function() {
+                         var value = $('#prefix').val();
+                         value = value.replace(" ", "");
+                         if (value.length > 12 || value.length < 4) {
+                             $('.prefix').html("Игрок");
+                             var status = "danger";
+                             var message = "Префикс не может быть более 12 и не менее 4 символов";
+                             $('.preferror').html('<div class="animated shake alert alert-' + status + '">' + message + '</div>');
+                         } else {
+                             var color = $('.prefix').css("color");
+                             var prefix = "";
+                             if ($('.prefix').css("text-decoration") !== "none") {
+                                 value = '§n' + value;
+                             }
+                             if (color == "rgb(0, 128, 0)") {
+                                 prefix = '§8[§a' + value + '§8]§f';
+                             } else if (color == "rgb(0, 0, 255)") {
+                                 prefix = '§8[§9' + value + '§8]§f';
+                             } else if (color == "rgb(255, 0, 0)") {
+                                 prefix = '§8[§c' + value + '§8]§f';
+                             } else if (color == "rgb(255, 165, 0)") {
+                                 prefix = '§8[§6' + value + '§8]§f';
+                             } else if (color == "rgb(255, 215, 0)") {
+                                 prefix = '§8[§e' + value + '§8]§f';
+                             } else if (color == "rgb(64, 224, 208)") {
+                                 prefix = '§8[§3' + value + '§8]§f';
+                             } else if (color == "rgb(148, 0, 211)") {
+                                 prefix = '§8[§5' + value + '§8]§f';
+                             } else if (color == "rgb(0, 191, 255)") {
+                                 prefix = '§8[§b' + value + '§8]§f';
+                             } else if (color == "rgb(255, 0, 255)") {
+                                 prefix = '§8[§d' + value + '§8]§f';
+                             } else {
+                                 prefix = '§8[§9' + value + '§8]§f';
+                             }
+							 buy(formDATA+"&prefix="+prefix);
+                         }
+                     });
+                 } else buy(formDATA);
+             });
+
+             function buy(data) {
+                 $.post('/engine/ajax.php?type=buy', data, function(data) {
+                     var data = JSON.parse(data);
+                     if (data.href) location.href = data.href;
+                     else {
+                         sendalert("danger", data.button);
+                     }
+                 });
+             }
+         });
+      </script>
+   </body>
+</html>

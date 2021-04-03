@@ -1,0 +1,136 @@
+Uri: https://vimemc.ru/
+File Name: c:\Downloaded Web Sites\vimemc.ru\index.htm
+Content Type: text/html
+
+Uri: https://vimemc.ru/templates/styles/images/favicon.ico
+File Name: c:\Downloaded Web Sites\vimemc.ru\templates\styles\images\favicon.ico
+Content Type: image/x-icon
+
+Uri: https://vimemc.ru/templates/styles/css/bootstrap.min.css
+File Name: c:\Downloaded Web Sites\vimemc.ru\templates\styles\css\bootstrap.min.css
+Content Type: text/css
+
+Uri: https://vimemc.ru/templates/styles/css/site.min.css
+File Name: c:\Downloaded Web Sites\vimemc.ru\templates\styles\css\site.min.css
+Content Type: text/css
+
+Uri: https://vimemc.ru/templates/styles/css/style.css
+File Name: c:\Downloaded Web Sites\vimemc.ru\templates\styles\css\style.css
+Content Type: text/css
+
+Uri: https://vimemc.ru/hd/
+File Name: c:\Downloaded Web Sites\vimemc.ru\hd\index.htm
+Content Type: text/html
+
+Uri: https://vimemc.ru/plash/
+File Name: c:\Downloaded Web Sites\vimemc.ru\plash\index.htm
+Content Type: text/html
+
+Uri: https://vimemc.ru/templates/styles/images/banner-min.png
+File Name: c:\Downloaded Web Sites\vimemc.ru\templates\styles\images\banner-min.png
+Content Type: image/png
+
+Uri: https://vimemc.ru/templates/styles/js/slim.min.js
+File Name: c:\Downloaded Web Sites\vimemc.ru\templates\styles\js\slim.min.js
+Content Type: application/javascript
+
+Uri: https://vimemc.ru/templates/styles/js/popper.min.js
+File Name: c:\Downloaded Web Sites\vimemc.ru\templates\styles\js\popper.min.js
+Content Type: application/javascript
+
+Uri: https://vimemc.ru/templates/styles/js/jquery.countdown.min.js
+File Name: c:\Downloaded Web Sites\vimemc.ru\templates\styles\js\jquery.countdown.min.js
+Content Type: application/javascript
+
+Uri: https://vimemc.ru/templates/styles/js/bootstrap.min.js
+File Name: c:\Downloaded Web Sites\vimemc.ru\templates\styles\js\bootstrap.min.js
+Content Type: application/javascript
+
+Uri: https://vimemc.ru/templates/styles/js/fontawesome.js
+File Name: c:\Downloaded Web Sites\vimemc.ru\templates\styles\js\fontawesome.js
+Content Type: application/javascript
+
+Uri: https://vimemc.ru/templates/styles/images/load.gif
+File Name: c:\Downloaded Web Sites\vimemc.ru\templates\styles\images\load.gif
+Content Type: image/gif
+
+Uri: https://vimemc.ru/templates/styles/images/background.png
+File Name: c:\Downloaded Web Sites\vimemc.ru\templates\styles\images\background.png
+Content Type: image/png
+
+Uri: https://vimemc.ru/hd/ERBAEV/bootstrap.css
+File Name: c:\Downloaded Web Sites\vimemc.ru\hd\ERBAEV\bootstrap.css
+Content Type: text/css
+
+Uri: https://vimemc.ru/hd/ERBAEV/site.min.css
+File Name: c:\Downloaded Web Sites\vimemc.ru\hd\ERBAEV\site.min.css
+Content Type: text/css
+
+Uri: https://vimemc.ru/hd/ERBAEV/style.css
+File Name: c:\Downloaded Web Sites\vimemc.ru\hd\ERBAEV\style.css
+Content Type: text/css
+
+Uri: https://vimemc.ru/hd/ERBAEV/font-awesome.min.css
+File Name: c:\Downloaded Web Sites\vimemc.ru\hd\ERBAEV\font-awesome.min.css
+Content Type: text/css
+
+Uri: https://vimemc.ru/hd/ERBAEV/reg-tlauncher.png
+File Name: c:\Downloaded Web Sites\vimemc.ru\hd\ERBAEV\reg-tlauncher.png
+Content Type: image/png
+
+Uri: https://vimemc.ru/hd/ERBAEV/profile-tlauncher.png
+File Name: c:\Downloaded Web Sites\vimemc.ru\hd\ERBAEV\profile-tlauncher.png
+Content Type: image/png
+
+Uri: https://vimemc.ru/hd/ERBAEV/check-account-tlauncher-2.0.png
+File Name: c:\Downloaded Web Sites\vimemc.ru\hd\ERBAEV\check-account-tlauncher-2.0.png
+Content Type: image/png
+
+Uri: https://vimemc.ru/hd/ERBAEV/account-list-tl.jpg
+File Name: c:\Downloaded Web Sites\vimemc.ru\hd\ERBAEV\account-list-tl.jpg
+Content Type: image/jpeg
+
+Uri: https://vimemc.ru/hd/ERBAEV/install-tl-versions-2.0.png
+File Name: c:\Downloaded Web Sites\vimemc.ru\hd\ERBAEV\install-tl-versions-2.0.png
+Content Type: image/png
+
+Uri: https://vimemc.ru/hd/ERBAEV/skin-install-tl.jpg
+File Name: c:\Downloaded Web Sites\vimemc.ru\hd\ERBAEV\skin-install-tl.jpg
+Content Type: image/jpeg
+
+Uri: https://vimemc.ru/plash/ERBAEV/bootstrap.css
+File Name: c:\Downloaded Web Sites\vimemc.ru\plash\ERBAEV\bootstrap.css
+Content Type: text/css
+
+Uri: https://vimemc.ru/plash/ERBAEV/site.min.css
+File Name: c:\Downloaded Web Sites\vimemc.ru\plash\ERBAEV\site.min.css
+Content Type: text/css
+
+Uri: https://vimemc.ru/plash/ERBAEV/style.css
+File Name: c:\Downloaded Web Sites\vimemc.ru\plash\ERBAEV\style.css
+Content Type: text/css
+
+Uri: https://vimemc.ru/plash/ERBAEV/font-awesome.min.css
+File Name: c:\Downloaded Web Sites\vimemc.ru\plash\ERBAEV\font-awesome.min.css
+Content Type: text/css
+
+Uri: https://vimemc.ru/plash/ERBAEV/profile-tlauncher.png
+File Name: c:\Downloaded Web Sites\vimemc.ru\plash\ERBAEV\profile-tlauncher.png
+Content Type: image/png
+
+Uri: https://vimemc.ru/plash/ERBAEV/catalog-capes-tlauncher.png
+File Name: c:\Downloaded Web Sites\vimemc.ru\plash\ERBAEV\catalog-capes-tlauncher.png
+Content Type: image/png
+
+Uri: https://vimemc.ru/plash/ERBAEV/profile-tlauncher-cape.png
+File Name: c:\Downloaded Web Sites\vimemc.ru\plash\ERBAEV\profile-tlauncher-cape.png
+Content Type: image/png
+
+Uri: https://vimemc.ru/plash/ERBAEV/install-tl-versions-2.0.png
+File Name: c:\Downloaded Web Sites\vimemc.ru\plash\ERBAEV\install-tl-versions-2.0.png
+Content Type: image/png
+
+Uri: https://vimemc.ru/plash/ERBAEV/example-cape-minecraft.jpg
+File Name: c:\Downloaded Web Sites\vimemc.ru\plash\ERBAEV\example-cape-minecraft.jpg
+Content Type: image/jpeg
+
